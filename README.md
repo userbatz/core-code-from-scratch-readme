@@ -41,3 +41,46 @@ core code
 	Fin Si
 	
 FinAlgoritmo
+
+
+# DÍA JUEVES.
+
+## Ejercicio 1:
+
+	`let aumento=0;
+	for (let i = 0; i <= 50; i++) {
+ 	 aumento = aumento + 2;
+ 	 console.log(aumento);
+	}`
+
+## Ejercicio 2:
+
+El error fue el doble parentesis utilizado en la función IF.
+únicamente se utiliza un parentesis de apertura y uno de cierre. Además
+en la comparación debe tener dos ==
+el codigo correcto sería:
+
+	`var  cond  =  falso ;
+
+	var cond = false;
+
+	if ((cond == true)) {
+	  console.log('The cond variable is true');
+	} else {
+	  console.log('The cond variable is false');
+	}`
+
+## Ejercicio 3:
+
+SOLUCIÓN:
+	`var n = 100;
+
+	if (n ==100){
+	    console.log('this is a special number!!');
+	}
+
+	if (n<1000 && n % 10 ==0 && n!=100) {
+	    console.log('this number is almost special ');
+	} else {
+	    console.log('just a regular number');
+	}`
