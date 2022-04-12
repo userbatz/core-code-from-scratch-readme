@@ -15,7 +15,8 @@ core code
 	bitcoin = dolares * 0.000023
 	
 	imprimir "La conversión a bitcoin es: ",bitcoin`
-  
+   DÍA MIERCOLES
+   # DÍA MIERCOLES.
   `Algoritmo sin_titulo`
 	mprimir "ingrese el numero
 	leer dato`
