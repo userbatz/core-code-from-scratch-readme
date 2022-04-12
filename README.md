@@ -1,7 +1,7 @@
 # core-code-from-scratch-readme
 core code
 
-#Practica Día martes
+# DIA MARTES
 
 ## 1) El lenguaje compilado  lo traduce directamente la computadora  sin necesidad de un programa ó aplicación. Ahora el lenguaje interpretado no lo traduce directamente una computadora sino que  utiliza un programa que realiza ése proceso a travéz de el código fuente.
 
