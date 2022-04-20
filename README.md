@@ -85,3 +85,13 @@ SOLUCIÓN:
 	} else {
 	    console.log('just a regular number');
 	}`
+
+# SEMANA 2 
+
+## DÍA MARTES
+
+**EJERCICIO 1: MULTIPLICACION**
+
+`multiply = function (a, b) {
+  return a * b;
+}`
