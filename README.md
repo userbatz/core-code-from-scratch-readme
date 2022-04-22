@@ -91,9 +91,10 @@ el codigo correcto sería:
 
 **EJERCICIO 1: MULTIPLICACION**
 
-`multiply = function (a, b) {
-  return a * b;
-}`
+
+	`multiply = function (a, b) {
+  	return a * b;
+	}`
 
 **EJERCICIO2:  ASCII**
 
