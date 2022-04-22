@@ -140,7 +140,8 @@ el codigo correcto sería:
 
 ## DIA MIERCOLES
 
-**Ejercicio 1**
+**EJERCICIO5: Vacaciones**
+
 	`function dutyFree(normPrice, discount, hol){
 	  let AhorroUnit =  (normPrice * discount)/100;
 	  let res = hol/AhorroUnit;
