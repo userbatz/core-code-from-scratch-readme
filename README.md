@@ -73,7 +73,6 @@ el codigo correcto sería:
 
 ## Ejercicio 3:
 
-SOLUCIÓN:
 	`var n = 100;
 
 	if (n ==100){
