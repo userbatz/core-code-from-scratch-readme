@@ -140,10 +140,23 @@ el codigo correcto sería:
 
 ## DIA MIERCOLES
 
-**EJERCICIO5: Vacaciones**
+**EJERCICIO 1: Vacaciones**
 
 	`function dutyFree(normPrice, discount, hol){
 	  let AhorroUnit =  (normPrice * discount)/100;
 	  let res = hol/AhorroUnit;
 	  return Math.trunc(res);
+	}`
+	
+**EJERCICIO2: Edad padre/hijo**
+
+	`function twiceAsOld(dadYearsOld, sonYearsOld) {
+	  // your code here
+	  let val = dadYearsOld/2;
+	  if (val<=sonYearsOld){
+	    //return sonYearsOld - val;
+	    return (sonYearsOld*2) -dadYearsOld;
+	  }
+	  return dadYearsOld- (sonYearsOld * 2);
+
 	}`
