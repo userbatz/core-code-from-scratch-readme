@@ -135,4 +135,14 @@ SOLUCIÓN:
     return 75;
   }
   return 0;
+}
+
+
+## DIA MIERCOLES
+
+** Ejercicio 1: **
+`function dutyFree(normPrice, discount, hol){
+  let AhorroUnit =  (normPrice * discount)/100;
+  let res = hol/AhorroUnit;
+  return Math.trunc(res);
 }`
