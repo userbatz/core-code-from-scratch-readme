@@ -98,51 +98,51 @@ el codigo correcto sería:
 
 **EJERCICIO2:  ASCII**
 
-`function uniTotal (string) {
-// total up dem unicodes!
-  let acumular=0;
-  for(i=0;i<string.lenght; i++) {
-    let ascii = string.charCodeAt(i);
-    acumular = acumular + ascii;
-  }
-  return acumular;
-}`
+	`function uniTotal (string) {
+	// total up dem unicodes!
+	  let acumular=0;
+	  for(i=0;i<string.lenght; i++) {
+	    let ascii = string.charCodeAt(i);
+	    acumular = acumular + ascii;
+	  }
+	  return acumular;
+	}`
 
 **EJERCICIO3: Char From   ASCII**
 
-`function getChar(c){
-  // ...
-  let valor = String.fromCharCode(c);
-  return valor;
-}`
+	`function getChar(c){
+	  // ...
+	  let valor = String.fromCharCode(c);
+	  return valor;
+	}`
 
 **EJERCICIO4: Convert dec-Binary**
 
-`function addBinary(a,b) {
-  let suma = a + b;
-  const binary = suma.toString(2);
-  return binary;   
-}`
+	`function addBinary(a,b) {
+	  let suma = a + b;
+	  const binary = suma.toString(2);
+	  return binary;   
+	}`
 
 **EJERCICIO5: Student's final grade**
 
-`function finalGrade (exam, projects) {
-  if (exam>90 || projects>10) {
-    return 100;
-  } else if(exam>75 && projects>=5) {
-    return 90;
-  } else if (exam>50 && projects>=2){
-    return 75;
-  }
-  return 0;
-}
+	`function finalGrade (exam, projects) {
+	  if (exam>90 || projects>10) {
+	    return 100;
+	  } else if(exam>75 && projects>=5) {
+	    return 90;
+	  } else if (exam>50 && projects>=2){
+	    return 75;
+	  }
+	  return 0;
+	}`
 
 
 ## DIA MIERCOLES
 
 **Ejercicio 1**
-`function dutyFree(normPrice, discount, hol){
-  let AhorroUnit =  (normPrice * discount)/100;
-  let res = hol/AhorroUnit;
-  return Math.trunc(res);
-}`
+	`function dutyFree(normPrice, discount, hol){
+	  let AhorroUnit =  (normPrice * discount)/100;
+	  let res = hol/AhorroUnit;
+	  return Math.trunc(res);
+	}`
