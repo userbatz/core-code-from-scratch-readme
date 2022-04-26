@@ -160,3 +160,26 @@ el codigo correcto sería:
 	  return dadYearsOld- (sonYearsOld * 2);
 
 	}`
+	
+**EJERCICIO 3: VALID SPACING**
+	`function validSpacing(s) {
+
+	  if(s.charAt(0) === ' ' || s.charAt(s.length - 1) === ' ') { 
+	     return false;
+	  }
+
+	  for(let i = 0; i < s.length; i++) {
+	    if(s.charAt(i) === ' ')
+	    { 
+	      if(i != 0 && s.charAt(i-1) === ' ') {
+		return false;
+	      }
+	      if(i != (s.length - 1) && s.charAt(i+1) === ' ') {
+		return false;
+	      }
+	    }
+
+	  }
+
+	  return true; 
+	}`
