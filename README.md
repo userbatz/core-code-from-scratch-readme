@@ -183,3 +183,21 @@ el codigo correcto sería:
 
 	  return true; 
 	}`
+	
+**EJERCICIO 4: binario**
+
+	`
+	function fakeBin(x){
+	  let nuevo = '';
+	  for(i=0; i<=x.length-1;i++){
+	    if(parseInt(x[i])<5){
+	      nuevo = nuevo + '0';
+	    } else {
+	      nuevo = nuevo + '1';
+	    }
+	  }
+
+	  return nuevo;
+	}
+	`
+
