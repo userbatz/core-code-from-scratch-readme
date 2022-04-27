@@ -203,6 +203,7 @@ el codigo correcto sería:
 ## DÍA JUEVES:
 
 **Ejercicio 1: exclamation marks series**
+
 	`function remove(string) {
 
 	  for(i=string.length-1;i>=0;i--){   
