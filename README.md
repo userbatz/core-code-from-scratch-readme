@@ -200,4 +200,21 @@ el codigo correcto sería:
 	  return nuevo;
 	}
 	`
+## DÍA JUEVES:
+
+**Ejercicio 1: exclamation marks series**
+	`function remove(string) {
+
+	  for(i=string.length-1;i>=0;i--){   
+	    if(string.substring(i,i+1)=='!') {
+	      string= string.slice(0,string.length-1);
+	    }
+	    else {
+	      break;
+	    }
+
+	  }
+	  return string;
+	}
+	`
 
