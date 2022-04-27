@@ -218,4 +218,41 @@ el codigo correcto sería:
 	  return string;
 	}
 	`
+	
+**EJERCICIO 2: vowel remover**
 
+	`function shortcut (string) {
+	  let newData = string.replace(/[aeiou]/g, '')
+	  return newData;
+	}`
+
+**EJERCICIO 3: piedra papel o tijeras**
+
+	`const rps = (p1, p2) => {
+	  if(p1=='scissors' && p2=='paper' ||  p1=='paper' && p2=='rock' || p1=='rock' && p2=='scissors'){
+	    return 'Player 1 won!';
+	  } else if(p1=='paper' && p2=='scissors' ||  p1=='rock' && p2=='paper' || p1=='scissors' && p2=='rock') {
+	    return 'Player 2 won!';
+	  } else {
+	    return 'Draw!';
+	  }
+	};`
+	
+**EJERCICIO 4: persistent bugger**
+
+	`function persistence(num) {
+
+	  let newV=[];
+	  let guardar=1;
+	  let cont=0;
+	   while(num>=10){
+	     newV = num.toString().split('');
+	     for (let i = 0; i < digits.length; i++) {
+	      guardar = guardar * newV[i];
+	    }
+
+	     num = guardar;
+	     cont = cont +1;
+	   }
+	  return cont;
+	}`
