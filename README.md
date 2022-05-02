@@ -256,3 +256,86 @@ el codigo correcto sería:
 	   }
 	  return cont;
 	}`
+	
+# SEMANA 3
+
+## DÍA LUNES
+
+**EJERCICIO 1**
+
+	`function likes(names) {
+	  // TODO
+	  let texto = '';
+	  if(names==''){
+	    return 'no one likes this';
+	  } else {
+	    if(names.length==1){
+	      texto = `${names} likes this`;
+	    } else if(names.length==2){
+	      texto = `${names[0]} and ${names[1]} like this`;
+	    } else if(names.length==3){ 
+	      texto = `${names[0]}, ${names[1]} and ${names[2]} like this`;
+	    }  else {
+	      texto = `${names[0]}, ${names[1]} and ${names.length-2} others like this`;  
+	    }
+	  }
+	  return texto;
+	}`
+
+**EJERCICIO 2**
+
+	`var countBits = function(n) {
+	  // Program Me
+	  let count=0;
+	  let nuevo = n.toString(2)
+	  let dato1 = nuevo.split('');
+
+	  for(i=0;i<nuevo.length;i++){
+	    if(dato1[i]=='1'){
+	      count += 1;
+	    }
+	  }`
+	 
+**EJERCICIO 3**
+
+	`function order(words) {
+	  // ...
+	  let texto = words.split(' ');
+	  let cont = 0;
+	  let id = [];
+	  let txt = [];
+	  let aux = 0;
+	  let aux1 = 0;
+
+	  if(words == ''){
+	    return '';
+	  }
+	  for (i = 0; i < texto.length; i++) {
+
+	    let contenido = texto[i].split('');
+
+	    for (j = 0; j < contenido.length; j++) {
+	      if (isNaN(contenido[j]) == false) {
+		id[cont] = parseInt(contenido[j], 10);
+		txt[cont] = texto[i];
+		cont += 1;
+	      }
+	    }
+
+	  }
+	  for (k = 1; k < id.length; k++) {
+	    for (i = 0; i < (id.length - k); i++) {
+	      if (id[i] > id[i + 1]) {
+		aux = id[i];
+		aux1 = txt[i];
+		id[i] = id[i + 1];
+		txt[i] = txt[i + 1];
+		id[i + 1] = aux;
+		txt[i + 1] = aux1;
+	      }
+	    }
+	  }
+
+	  return txt.join(' ');
+
+	}`
