@@ -339,3 +339,157 @@ el codigo correcto sería:
 	  return txt.join(' ');
 
 	}`
+	
+## DÍA MARTES
+
+**EJERCICIO 1**
+
+	`function pigIt(str){
+	  //Code here
+	  let texto = str.split(' ');
+	  let indv = '';
+	  console.log(texto);
+	  for(i=0;i<texto.length;i++){
+	    indv = texto[i].split('');
+	    indv.push(indv[0]);
+	    indv.shift();
+	    indv.push('ay');
+	    indv.join('');
+	    texto[i]=indv;
+	    console.log(texto[i].join('')); 
+
+
+
+	}
+	return texto.join('  ');
+	}`
+	
+**EJERCICIO 2**
+
+	`function duplicateCount(text){
+	  //...
+	  let contador=0;
+	  let count = [];
+	  let newText = text.toLowerCase();
+	  let txt = newText.split('');
+	  txt.sort();
+
+	  if(txt[0]!=txt[1]){
+	    return 0;
+	  }
+
+	  while (txt[0]==txt[contador+1]){
+	    contador +=1;
+	  }
+
+	  return contador+1;
+	}`
+	
+**EJERCICIO 3**
+
+	`function (morseCode) {
+	  morseCode = morseCode.replace(/   /g, '#');
+	  let decodedCode = '';
+	  let tempWordToDecode = '';
+	  for (let i = 0, lenght = morseCode.length; i < lenght; i++) {
+	    if (morseCode[i] === ' ') {
+	      decodedCode += MORSE_CODE[tempWordToDecode] || '';
+	      tempWordToDecode = '';
+	    } else if (morseCode[i] === '#') {
+	      decodedCode += `${MORSE_CODE[tempWordToDecode] || ''} `;
+	      tempWordToDecode = '';
+	    } else {
+	      tempWordToDecode += morseCode[i];
+	    }
+	  }
+	  decodedCode += MORSE_CODE[tempWordToDecode] || '';
+	  return decodedCode.trim();
+	};`
+
+## DIA MIERCOLES
+
+**EJERCICIO 1**
+
+	`function validParentheses(parens) {
+	  // your code here ..
+	  let nw = parens.split('');
+	  let cont = 0;
+	  let total = 0;
+	  for(i=0;i<nw.length;i++){
+	    if(nw[i]=='('){
+	      cont = 1;
+	    } else {
+	      cont = -1;
+	    }
+
+
+	    total += cont;
+	  }
+
+	  if(total==0){
+	    return true;
+	  }
+	  return false;
+
+	}`
+	
+**EJERCICIO 2**
+
+	`function toCamelCase(str) {
+	  let res = '';
+	  for (let i = 0; i < str.length; i++) {
+	    if (i != 0 && (str[i - 1] === '_' || str[i - 1] === '-')) {
+	      res += str[i].toUpperCase();
+	    } else if (str[i] != '-' && str[i] != '_') {
+	      res += str[i];
+	    }
+	  }
+	  return res;
+	}`
+
+**EJERCICIO 3**
+
+	`function uniqueInOrder(iterable) {
+
+	  let nwT; 
+	  let res = [];
+	  let range= iterable.length;
+
+
+	  for (let i = 0; i < range; i++) {
+
+	    if (iterable[i] !== nwT) {
+	      nwT = iterable[i];
+	      res.push(nwT);
+	    }
+
+
+	  }
+
+	  return res;
+	}`
+	
+	
+## DIA JUEVES
+
+**EJERCICIO 1**
+
+	`function foldArray(array, runs)
+	{
+	    let leftEnd = Math.floor(array.length / 2),
+		rightStart = Math.ceil(array.length / 2);
+
+	    let left = array.slice(0, leftEnd),
+		right = array.slice(rightStart).reverse();
+
+	    let result = left.map((val, index) => {
+		return val + right[index];
+	    });
+
+	    if (leftEnd !== rightStart) {
+		result.push(array[leftEnd]);
+	    }
+
+	    return runs === 1 ? result : foldArray(result, runs - 1);
+	}`
+
